@@ -1,0 +1,51 @@
+{
+  "_resourceType": "actor",
+  "id": "404525f6-a210-4c00-b031-d425f4c68dd9",
+  "name": "nexus door",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_2",
+  "script": [
+    {
+      "command": "EVENT_SCENE_PUSH_STATE",
+      "args": {},
+      "id": "3f5bfefb-99cf-489a-bf72-f6ddd45e568f"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2d2116a3-2692-4fb9-a923-f4bac548c61b",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "direction": "down",
+        "fadeSpeed": "2",
+        "__collapse": true
+      },
+      "id": "1a996fff-6557-48e4-9c57-765f5c84b4c4"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 2,
+  "y": 3,
+  "_index": 1
+}

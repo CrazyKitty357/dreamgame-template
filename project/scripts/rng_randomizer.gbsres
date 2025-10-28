@@ -1,0 +1,53 @@
+{
+  "_resourceType": "script",
+  "id": "a57da830-5e44-4f67-a979-6cbdd6422d44",
+  "name": "RNG RANDOMIZER",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_1",
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left",
+          "up",
+          "down",
+          "right",
+          "a"
+        ],
+        "override": false,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_RNG_SEED",
+            "args": {
+              "__collapse": true
+            },
+            "id": "2f73c4a0-715e-417f-b0e4-f4f04999e651"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "0",
+              "operation": "set",
+              "other": "rnd",
+              "vectorY": "0",
+              "value": "0",
+              "minValue": -32767,
+              "maxValue": "32767",
+              "clamp": false,
+              "__collapse": true
+            },
+            "id": "f7713186-d70a-461a-9430-8666ebb5ed4f"
+          }
+        ]
+      },
+      "id": "e06954db-cbba-40e0-a6e1-ec8f30e2ad54"
+    }
+  ]
+}

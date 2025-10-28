@@ -1,0 +1,57 @@
+{
+  "_resourceType": "script",
+  "id": "05a3ac10-866a-429d-bf7e-6dd68c11d860",
+  "name": "Reset Dream Values",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_2",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "d2248549-2ae4-4209-b078-a4db75bfb7e5"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "e2e988f7-e787-4dfa-aabd-d503016a88e6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "3",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "195acc0e-78a8-4487-ac92-d0f17dfca4c6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "89aa691f-41ad-4422-8c8d-9ac0b5d1edfa"
+    }
+  ]
+}

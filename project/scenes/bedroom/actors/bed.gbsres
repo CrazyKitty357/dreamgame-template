@@ -1,0 +1,87 @@
+{
+  "_resourceType": "actor",
+  "id": "457d298a-f669-4444-a2aa-46a794952c42",
+  "name": "bed",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "true"
+        },
+        "__collapse": true
+      },
+      "id": "b9d13fd3-0d0f-4348-b29e-a3f35ae703d5"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "cade61da-2678-4841-bc35-d5e7d39ea68f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 15,
+        "units": "frames"
+      },
+      "id": "2fdc4156-a27b-458c-baa3-dc247c4eb2a5"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true
+      },
+      "id": "78258e1f-4d2e-43a7-afa7-35cd23d863ad"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "d44d64a7-32e2-40c9-9154-d9ddbaa0d526",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "left",
+        "fadeSpeed": "2",
+        "__collapse": true
+      },
+      "id": "a6220f0c-365c-44ba-9310-b74874900f27"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 17,
+  "y": 4,
+  "_index": 0
+}

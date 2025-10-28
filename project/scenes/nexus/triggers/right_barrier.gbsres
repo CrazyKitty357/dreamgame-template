@@ -1,0 +1,31 @@
+{
+  "_resourceType": "trigger",
+  "id": "ec13e0a4-e617-4293-83d4-d9279aeae378",
+  "name": "right barrier",
+  "prefabId": "",
+  "x": 19,
+  "y": 1,
+  "symbol": "trigger_3",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 16,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "variable",
+          "value": "2"
+        }
+      },
+      "id": "e1c9a817-90e1-4d7f-90cb-ccd583fe2893"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 3
+}

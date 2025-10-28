@@ -1,0 +1,75 @@
+{
+  "_resourceType": "actor",
+  "id": "14c82204-d84c-4a75-8213-c7e0c3beaf0c",
+  "name": "position tracker",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "8b9e35a8-c19a-479f-89ab-4e038ac11402",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": true,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_8",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "5b60438d-2809-4d53-a92a-883667a60757"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "53c8eafc-3cf9-43bc-b0f1-cc9bb7597e7e"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "left",
+          "up",
+          "down",
+          "right"
+        ],
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "1",
+              "vectorY": "2",
+              "__collapse": true
+            },
+            "id": "a8fbeb80-2ce6-4b2a-8ecf-a3eea138f394"
+          }
+        ],
+        "false": []
+      },
+      "id": "73e13bf2-6970-4aff-99df-fe5e231554c7"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 0,
+  "y": 17,
+  "_index": 2
+}
